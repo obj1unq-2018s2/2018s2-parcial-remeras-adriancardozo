@@ -1,0 +1,27 @@
+import remeras.*
+import sucursales.*
+
+describe "tests de remeras" {
+	test "test de costo de RemeraLisa"{
+		assert.equals(80,new RemeraLisa(talle = 40, color = "Gris").costo())
+		assert.equals(100,new RemeraLisa(talle = 42, color = "Gris").costo())
+		assert.equals(88,new RemeraLisa(talle = 40, color = "Verde").costo())
+		assert.equals(110,new RemeraLisa(talle = 42, color = "Verde").costo())
+	}
+	
+	test "test de costo de RemeraBordada"{
+		assert.equals(120,new RemeraBordada(talle = 44, color = "Blanco", cantidadDeColoresBordado = 1).costo())
+		assert.equals(140,new RemeraBordada(talle = 44, color = "Blanco", cantidadDeColoresBordado = 4).costo())
+	}
+	
+	test "test de costo de RemeraSublimada"{
+		const disney = new Empresa(precioDerechosAutor = 100)
+		assert.equals(275,new RemeraSublimada(talle = 42, color = "Gris", anchoSublimado = 10, altoSublimado = 15,
+			                                  sublimadoDeEmpresa = true, empresa = disney
+		                                      ).costo())
+	}
+	
+
+	
+
+}

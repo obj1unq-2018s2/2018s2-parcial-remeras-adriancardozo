@@ -29,4 +29,5 @@ class RemeraSublimada inherits RemeraLisa {
 
 class Empresa {
 	const property tieneConvenio = false
+	const property precioDerechosAutor = 0
 }
