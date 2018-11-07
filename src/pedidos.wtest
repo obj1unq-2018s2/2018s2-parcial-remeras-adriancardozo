@@ -2,6 +2,9 @@ import remeras.*
 import sucursales.*
 describe "tests de pedidos"{
 	test "test de pedidos"{
-		
+		const avellaneda = new Sucursal(cantidadMinimaParaDescuento = 5)
+		const flores = new Sucursal(cantidadMinimaParaDescuento = 6)
+		assert.equals(500, new Pedido(cantidad = 5, sucursal = flores, modelo = new RemeraLisa(color = "Gris", talle = 42)).precio())
+		assert.equals(450, new Pedido(cantidad = 5, sucursal = avellaneda, modelo = new RemeraLisa(color = "Gris", talle = 42)).precio())
 	}
 }
