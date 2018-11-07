@@ -5,6 +5,10 @@ test "test del punto C"{
 	comercio.registrarPedido(new Pedido())
 	comercio.totalFacturado()
 	comercio.totalFacturadoSucursal(new Sucursal())
-	
+	comercio.cantidadDePedidosDeColor("Blanco")
+	comercio.pedidoMasCaro()
+	comercio.tallesSinPedidos()
+	comercio.sucursalQueMasFacturo() 
+	comercio.sucursalesQueVendieronTodosLosTalles()
 }
 
