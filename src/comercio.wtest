@@ -1,6 +1,7 @@
 import remeras.*
 import sucursales.*
 
+
 test "test del punto C"{
 	comercio.registrarPedido(new Pedido())
 	comercio.totalFacturado()
